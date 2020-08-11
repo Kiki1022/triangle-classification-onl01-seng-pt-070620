@@ -13,11 +13,10 @@ class Triangle
     #binding.pry
       if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
-      begin 
+      #begin 
         raise TriangleError
         #rescue TriangleError => error 
-        puts error.message
-      end
+        #end
     
       elseif a == b && a == c
       self.kind = :equilateral
