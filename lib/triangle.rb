@@ -11,27 +11,26 @@ class Triangle
   
   def kind 
     #binding.pry
-    if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
+      if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
-      begin 
+      #begin 
         raise TriangleError
         #rescue TriangleError => error 
         #puts error.message
       end
     
-    elseif a == b && a == c
+      elseif a == b && a == c
       self.kind = :equilateral
-    elseif a == b || a == c || b == c
+      elseif a == b || a == c || b == c
       self.kind = :isosceles
-    else
+      else
       self.kind = :scalene
+    end
   end
-end
-
 
   class TriangleError < StandardError
     def message
       puts "Not a Triangle!"
     end
-end
+  end
 end
