@@ -14,8 +14,8 @@ class Triangle
     if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
       begin 
-        raise RangeError
-        rescue RangeError => error 
+        raise TriangleError
+        rescue TriangleError => error 
         puts error.message
       end
     
