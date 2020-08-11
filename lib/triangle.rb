@@ -14,8 +14,8 @@ class Triangle
     if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
       begin 
-        raise TriangleError
-        #rescue TriangleError => error 
+        raise RangeError
+        rescue RangeError => error 
         puts error.message
       end
     
@@ -32,7 +32,7 @@ end
  
  
  
-  class TriangleError < StandardError
+  class RangeError < StandardError
     def message
       puts "Not a Triangle!"
     end
