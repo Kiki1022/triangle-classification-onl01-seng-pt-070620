@@ -19,7 +19,7 @@ class Triangle
         puts error.message
       end
     
-    elseif a == b && b == c
+    elseif a == b && a == c
       self.kind = :equilateral
     elseif a == b || a == c || b == c
       self.kind = :isosceles
