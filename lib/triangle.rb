@@ -19,7 +19,7 @@ class Triangle
         #end
     
       elseif a == b && a == c
-      self.kind = :equilateral
+      :equilateral
       
       elseif a == b || a == c || b == c
       self.kind = :isosceles
