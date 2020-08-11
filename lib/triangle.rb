@@ -32,7 +32,7 @@ end
  
  
  
-  class RangeError < StandardError
+  class TriangleError < StandardError
     def message
       puts "Not a Triangle!"
     end
