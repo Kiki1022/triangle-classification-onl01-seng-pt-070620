@@ -10,22 +10,21 @@ class Triangle
 
   
   def kind 
-    #binding.pry
+  
       if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
-      #begin 
+      
         raise TriangleError
-        #rescue TriangleError => error 
-        #end
+        
     
       elseif a == b && a == c
       :equilateral
       
       elseif a == b || a == c || b == c
-      self.kind = :isosceles
+      :isosceles
       
       else
-      self.kind = :scalene
+      :scalene
     end
   end
 
