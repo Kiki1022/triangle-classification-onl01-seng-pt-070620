@@ -11,7 +11,7 @@ class Triangle
   
   def kind 
     #binding.pry
-    if (a*b*c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
+    if (a * b * c) == 0 ||(a + b) <= c || (c + b) <= a || (c + a) <= b
       
       begin 
         raise TriangleError
